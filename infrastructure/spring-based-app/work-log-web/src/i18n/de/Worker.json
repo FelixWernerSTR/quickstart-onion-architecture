@@ -1,0 +1,28 @@
+{
+  "WorkerApp": {
+    "worker": {
+      "home": {
+        "title": "Worker",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Worker erstellen",
+        "createOrEditLabel": "Worker erstellen oder bearbeiten",
+        "notFound": "Keine Workers gefunden"
+      },
+      "created": "Worker erstellt mit ID { param }",
+      "updated": "Worker aktualisiert mit ID { param }",
+      "deleted": "Worker gelöscht mit ID { param }",
+      "delete": {
+        "question": "Soll Worker { id } wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Worker"
+      },
+      "id": "ID",
+      "name": "Name",
+      "angebotsnummer": "Angebotsnummer",
+      "schlagwort": "Schlagwort",
+      "versicherungsbeginn": "Versicherungsbeginn",
+      "buJN": "Bu JN"
+    }
+  }
+}

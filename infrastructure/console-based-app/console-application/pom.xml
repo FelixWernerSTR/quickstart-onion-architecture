@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>pl.splaw.onionarchitecture</groupId>
+        <artifactId>console-based-app</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <name>ConsoleApplication</name>
+    <artifactId>console-application</artifactId>
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>pl.splaw.onionarchitecture.consoleapplication.ConsoleApplication</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+          <!-- Maven Shade Plugin -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-shade-plugin</artifactId>
+            <version>3.6.0</version>
+            <executions>
+              <!-- Run shade goal on package phase -->
+              <execution>
+                <id>creating shaded console-application</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>shade</goal>
+                </goals>
+                <configuration>
+                  <finalName>console-application</finalName>
+                  <transformers>
+                    <!-- add Main-Class to manifest file -->
+                    <transformer
+                      implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                      <mainClass>pl.splaw.onionarchitecture.consoleapplication.ConsoleApplication</mainClass>
+                    </transformer>
+                  </transformers>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+           <groupId>org.apache.commons</groupId>
+           <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>pl.splaw.onionarchitecture</groupId>
+            <artifactId>application-services</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>pl.splaw.onionarchitecture</groupId>
+            <artifactId>application-logic</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>pl.splaw.onionarchitecture</groupId>
+            <artifactId>console-in-memory-repository</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>de.vandermeer</groupId>
+            <artifactId>asciitable</artifactId>
+        </dependency>
+    </dependencies>
+</project>
