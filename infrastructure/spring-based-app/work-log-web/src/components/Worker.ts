@@ -1,10 +1,7 @@
 import { defineComponent, ref, watch } from "vue";
-import { useRouter } from "vue-router";
 import { storeToRefs } from "pinia";
 import { useWorkerWorkLog} from "@/stores/WorkerWorkLogStore";
 import { useVuelidate } from '@vuelidate/core'
-import { maxLength } from '@vuelidate/validators'
-import { Worker } from "@/model/Worker.model";
 import { useI18n } from 'vue-i18n';
 import { useValidation } from '@/config/validation';
 
@@ -14,7 +11,7 @@ export default defineComponent({
   },
   setup() {
     const workerWorkLogStore = useWorkerWorkLog();
-    const { worker, isRequestLoading, isWorkerValid, searchLogin } = storeToRefs(workerWorkLogStore);
+    const { worker, searchLogin } = storeToRefs(workerWorkLogStore);
 
     function save() {
       console.debug("worker:", worker.value);
@@ -76,7 +73,6 @@ export default defineComponent({
     return {
       worker,
       searchLogin,
-      isWorkerValid,
       clearFields,
       save,
       update,

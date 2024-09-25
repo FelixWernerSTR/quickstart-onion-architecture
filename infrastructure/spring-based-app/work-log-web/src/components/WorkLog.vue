@@ -9,7 +9,7 @@
     <!-- Search field -->
     <div class="search-container">
       <input v-model="searchLogin" placeholder="Search by login" />
-      <button @click="getWorkerForLogin()">Search Worker</button>
+      <button @click="getWorkerForLogin()">Search Worker/Update WorkLog-List</button>
     </div>
 
     <!-- Edit form -->

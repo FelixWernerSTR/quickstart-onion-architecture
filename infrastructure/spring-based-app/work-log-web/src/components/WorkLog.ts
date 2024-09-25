@@ -1,11 +1,7 @@
 import { defineComponent, ref, watch } from "vue";
-import { useRouter } from "vue-router";
 import { storeToRefs } from "pinia";
 import { useWorkerWorkLog } from "@/stores/WorkerWorkLogStore";
 import { useVuelidate } from '@vuelidate/core'
-import { maxLength } from '@vuelidate/validators'
-import { Worker } from "@/model/Worker.model";
-import { WorkLog } from "@/model/WorkLog.model";
 import { useI18n } from 'vue-i18n';
 import { useValidation } from '@/config/validation';
 
@@ -15,7 +11,7 @@ export default defineComponent({
   },
   setup() { // do not use the keyword 'this' in the setup method -> 'this' is undefined in the setup method
     const workerWorkLogStore = useWorkerWorkLog();
-    const { worklog, worker, isRequestLoading, searchLogin, worklogs } = storeToRefs( workerWorkLogStore );
+    const { worklog, worker, searchLogin, worklogs } = storeToRefs( workerWorkLogStore );
 
     function save() {
       console.debug("worklog:", worklog.value);

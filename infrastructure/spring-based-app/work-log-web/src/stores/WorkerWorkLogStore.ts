@@ -37,7 +37,11 @@ export const useWorkerWorkLog = defineStore("WorkerWorkLog", {
       console.debug("retrieveWorker by pinia action!");
       workerService.find(this.searchLogin).then((res) => {
       console.debug("retrieveWorker res:", res);
-      this.worker = res;
+	  //this.worker = res; //attention update like this disables validate functionality
+	  this.worker.login=res.login;
+	  this.worker.name=res.name;
+	  this.worker.surname=res.surname;
+	  this.worker.email=res.email;
       }).catch((error) => {
         alert(error);
         console.debug("retrieveWorker fehlgeschlagen!", error);
