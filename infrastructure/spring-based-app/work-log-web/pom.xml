@@ -80,9 +80,15 @@
             </plugin>
         </plugins>
         <resources>
+             <!--für springboot-->
             <resource>
                 <directory>target/dist</directory>
                 <targetPath>static</targetPath>
+            </resource>
+            <!--für quarkus-->
+            <resource>
+                <directory>target/dist</directory>
+                <targetPath>META-INF/resources</targetPath>
             </resource>
         </resources>
     </build>
