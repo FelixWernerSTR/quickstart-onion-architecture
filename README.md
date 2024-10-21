@@ -1,5 +1,5 @@
 # a fork from: https://github.com/splaw88/onion-architecture
-Java21, Dependency-Update, Lombock removed, ui ported from angular to vue3
+Java21, Dependency-Update, Lombock removed, ui ported from angular to vue3, quarkus-based-app added.
 
 ## onion-architecture-drawing
 <p align="center">
