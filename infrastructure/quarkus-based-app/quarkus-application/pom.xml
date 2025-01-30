@@ -29,12 +29,6 @@
         <dependency>
             <groupId>pl.splaw.onionarchitecture</groupId>
             <artifactId>quarkus-database-repository</artifactId>
-            <exclusions>
-            <exclusion>
-               <groupId>org.testcontainers</groupId>
-               <artifactId>testcontainers</artifactId>
-            </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>pl.splaw.onionarchitecture</groupId>

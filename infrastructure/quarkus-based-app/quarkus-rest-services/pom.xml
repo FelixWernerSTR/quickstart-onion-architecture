@@ -16,7 +16,7 @@
        </dependency>
        <dependency>
            <groupId>io.quarkus</groupId>
-           <artifactId>quarkus-jackson</artifactId>
+           <artifactId>quarkus-rest-jackson</artifactId>
        </dependency>
        <!-- Add OpenAPI spec to the project and helps with the generation of both schema and Swagger UI -->
         <dependency>

@@ -1,5 +1,10 @@
-# a fork from: https://github.com/splaw88/onion-architecture
-Java21, Dependency-Update, Lombock removed, ui ported from angular to vue3, quarkus-based-app added.
+# A fork of: https://github.com/splaw88/onion-architecture
+	Java21, Dependency-Update to newest versions, Lombock removed, Angular4 replaced with Vue3, quarkus-based-app added.
+
+# Executing the App
+	after "clean install" are all types of applications with ui(work-log-web) functional. 
+	console-application/startConsoleApplication.cmd, 
+	spring-application/startSpringApplication.cmd/quarkus-application/startQuarkusApplication.cmd > localhost:8080
 
 ## onion-architecture-drawing
 <p align="center">
@@ -7,7 +12,7 @@ Java21, Dependency-Update, Lombock removed, ui ported from angular to vue3, quar
 </p>
  
 # Onion architecture
-This is the example of Onion Architecture described by Jeffrey Palermo implemented in Java.
+	This is the example of Onion Architecture described by Jeffrey Palermo implemented in Java.
 
 # What's going on?
 I'll try to explain some basics.

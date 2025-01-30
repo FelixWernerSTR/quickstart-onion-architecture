@@ -9,7 +9,7 @@
     
     <!-- Search field -->
     <div class="search-container">
-      <input v-model="searchLogin" @input="searchWorker" placeholder="Search by login" />
+      <input v-model="searchLogin" placeholder="Search by login" />
       <button @click="getWorkerForLogin()">Search Worker</button>
     </div>
 

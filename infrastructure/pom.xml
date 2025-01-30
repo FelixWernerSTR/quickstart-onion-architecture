@@ -10,8 +10,9 @@
     <packaging>pom</packaging>
     <name>05-Infrastructure</name>
     <modules>
-        <module>spring-based-app</module>
         <module>console-based-app</module>
+        <module>work-log-web</module>
+        <module>spring-based-app</module>
         <module>quarkus-based-app</module>
     </modules>
     <dependencyManagement>
