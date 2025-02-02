@@ -18,7 +18,7 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <version.node>v23.6.1</version.node> 
+        <version.node>v23.7.0</version.node> 
         <!--dependencies-->
         <version.spring.boot>3.4.2</version.spring.boot>
         <version.javax.inject>2.0.1</version.javax.inject>
@@ -31,7 +31,7 @@
         <version.liquibase>4.31.0</version.liquibase>
         <version.junit>5.11.4</version.junit>
         <assertj.version>3.27.3</assertj.version>
-        <quarkus.platform.version>3.18.0</quarkus.platform.version>
+        <quarkus.platform.version>3.18.1</quarkus.platform.version>
 
         <!--plugins-->
         <version.frontend-maven-plugin>1.15.1</version.frontend-maven-plugin>
