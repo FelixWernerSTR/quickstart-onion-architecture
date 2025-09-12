@@ -18,20 +18,20 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <version.node>v24.0.1</version.node> 
+        <version.node>v24.7.0</version.node> 
         <!--dependencies-->
-        <version.spring.boot>3.4.5</version.spring.boot>
+        <version.spring.boot>3.5.5</version.spring.boot>
         <version.javax.inject>2.0.1</version.javax.inject>
         <jakarta.enterprise.version>4.1.0</jakarta.enterprise.version>
-        <version.common-lang>3.17.0</version.common-lang>
+        <version.common-lang>3.18.0</version.common-lang>
         <version.asciitable>0.3.2</version.asciitable>
-        <version.hibernate>6.6.7.Final</version.hibernate>
-        <version.spring-framework>6.1.14</version.spring-framework>
+        <version.hibernate>6.6.28.Final</version.hibernate>
+        <version.spring-framework>6.2.11</version.spring-framework>
         <version.h2-database>2.3.232</version.h2-database>
         <version.liquibase>4.31.1</version.liquibase>
-        <version.junit>5.12.1</version.junit>
-        <assertj.version>3.27.3</assertj.version>
-        <quarkus.platform.version>3.22.2</quarkus.platform.version>
+        <version.junit>5.13.4</version.junit>
+        <assertj.version>3.27.4</assertj.version>
+        <quarkus.platform.version>3.26.3</quarkus.platform.version>
 
         <!--plugins-->
         <version.frontend-maven-plugin>1.15.1</version.frontend-maven-plugin>

@@ -33,7 +33,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     }
   },
   build: {  
-    target: 'modules', //https://vitejs.dev/config/build-options#build-target
+    target: 'baseline-widely-available', //https://vitejs.dev/config/build-options#build-target
     minify: true, // damit der javascriptcode in "dist/selenium" noch lesbar(im debugger) bleibt, kann man auf false setzen, https://vitejs.dev/config/build-options#build-minify
     assetsInlineLimit: 4096, //https://vitejs.dev/config/build-options#build-assetsinlinelimit
   },
